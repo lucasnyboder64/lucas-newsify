@@ -1,0 +1,110 @@
+.topic {
+    gap: 10px;
+    border-top: 1px solid #C5C5C5;
+    padding: 10px;
+    position: relative;
+}
+
+.title {
+    font-size: 16px;
+    font-family: 'Playfair Display';
+}
+
+.logo {
+    width: 18px;
+    height: 26px;
+}
+
+.arrow {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+}
+
+.content {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.topic-row {
+    position: relative;
+    width: 100%;
+    min-height: 104px;
+    overflow: hidden;
+    transition: transform 1s;
+}
+
+.content.swiped {
+    transform: translateX(-85px);
+}
+
+.thumbnail {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+
+.headline {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+}
+
+.goto {
+    text-decoration: underline;
+    color: black;
+    font-family: 'Open Sans';
+}
+
+.save-button {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    z-index: 1;
+    width: 0px;
+    height: 84px;
+    background-color: #46781B;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    z-index: 1;
+    transition: width 0.3s;
+}
+
+.save-button.active {
+    width: 100px;
+}
+
+.save-button img {
+
+    margin-right: 18px;
+}
+
+.trash-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background-color: #FF5D5D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 104px;
+}
+
+.save-button.red {
+    background-color: #FF5D5D;
+    color: white;
+}
